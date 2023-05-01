@@ -1,6 +1,4 @@
 import os
-#import requests
-#from bs4 import BeautifulSoup
 import difflib
 import time
 from datetime import datetime
