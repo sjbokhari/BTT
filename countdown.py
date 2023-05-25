@@ -1,9 +1,9 @@
 from datetime import datetime
 
-def countdown_fix(stop):
+def countdown_fix(stop: datetime) -> None:
     difference = stop - datetime.now()
-    count_hours, rem = divmod(difference.seconds, 3600)
-    count_minutes, count_seconds = divmod(rem, 60)
+    #count_hours, rem = divmod(difference.seconds, 3600)
+    #count_minutes, count_seconds = divmod(rem, 60)
     if difference.days < 0:
         print("日本へようこそ")
     else:
@@ -13,7 +13,7 @@ def countdown_fix(stop):
             #+ str(count_seconds) + "s"
             )
 
-def main():
+def main() -> None:
     end_time = datetime(2023, 7, 19, 17, 00, 0)
     countdown_fix(end_time)
 
